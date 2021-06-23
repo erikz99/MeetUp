@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>Регистрация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="scripts/login.js" defer></script>
+        <script src="scripts/panel_init.js" defer></script>
+    </head>
+    <body>
+        <header id="main_header">
+            <div class="main-header-item" id="icon_header_container">
+                <a class="no-style-a" href="index.html">
+                    <img class="icon" id="img_icon" src="img/icons/logo.png" alt="Лого на MeetUp">
+                </a>
+            </div>
+            <div class="main-header-item" id="profile_header_container">
+                <a id="sign_in" class="no-style-a" href="login.html">Вход</a>
+                <a id="register"  class="no-style-a" href="register.html">Регистрация</a>
+                <img id="profile_icon" class="button-icon" src="img/icons/panel.png" alt="Икона на потребителки панел">
+            </div>
+        </header>
+        <main>
+            <div id="register_type_container" class="form-container">
+                <header>
+                    <h1>Регистрация</h1>
+                </header>
+                <div id="profile-types-container">
+                    <div class="profile-type">
+                        <div>
+                            <img src="img/icons/student.png" alt="Икона на студент">
+                        </div>
+                        <h2>Регистрация като студент/ученик</h2>
+                        <button id="register-student-btn" class="gradient-btn">Регистрация</button>
+                    </div>
+                    <div class="profile-type">
+                        <div>
+                            <img src="img/icons/teacher.png" alt="Икона на преподавател">
+                        </div>
+                        <h2>Регистрация като преподавател</h2>
+                        <button id="register-techer-btn" class="gradient-btn">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

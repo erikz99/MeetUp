@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>Регистрация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="scripts/login.js" defer></script>
+        <script src="scripts/panel_init.js" defer></script>
+    </head>
+    <body>
+        <header id="main_header">
+            <div class="main-header-item" id="icon_header_container">
+                <a class="no-style-a" href="index.html">
+                    <img class="icon" id="img_icon" src="img/icons/logo.png" alt="Лого на MeetUp">
+                </a>
+            </div>
+            <div class="main-header-item" id="profile_header_container">
+                <a id="sign_in" class="no-style-a" href="login.html">Вход</a>
+                <a id="register"  class="no-style-a" href="register.html">Регистрация</a>
+                <img id="profile_icon" class="button-icon" src="img/icons/panel.png" alt="Икона на потребителки панел">
+            </div>
+        </header>
+        <main>
+            <div id="register_form_container" class="form-container">
+                <form action="" method="post" id="register_teacher_form">
+                    <header id="form_title">Регистрация</header>
+                    <div class="form-item">
+                        <label for="first_name">Име:</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Въведи име тук">
+                    </div>
+                    <div class="form-item">
+                        <label for="last_name">Фамилия:</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Въведи фамилия тук">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Имейл:</label>
+                        <input type="email" id="email" name="email" placeholder="Въведи имейл тук">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">Парола:</label>
+                        <input type="password" id="password" name="password" placeholder="Въведи парола тук">
+                    </div>
+                    <div class="form-item btn-container">
+                        <a id="login_anchor" href="login.html">Имаш профил? Натисни тук, за да влезеш в него.</a>
+                        <button id="teacher-btn" class="btn_submit gradient-btn" type="submit">Регистрация</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

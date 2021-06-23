@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(65, 65, 65) transparent;
+}
+
+body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    /*background: rgb(223, 242, 242);*/
+    /*background: rgb(206, 224, 224);*/
+    /*background: rgb(145, 193, 194);*/
+    background: rgb(185, 216, 219);
+}
+
+main {
+    height: 100%;
+    padding-top: 64px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+}
+
+#main_header {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 53, 102);
+    z-index: 100;
+}
+
+#icon_header_container {
+    margin-left: 20px;
+}
+
+#profile_header_container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+#profile_header_container .no-style-a {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#profile_header_container .no-style-a {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.no-style-a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+.no-style-a:hover {
+    color: rgb(156, 236, 91);
+}
+
+.no-style-a-dark {
+    text-decoration: none;
+    color: rgb(0, 107, 210);
+}
+
+.no-style-a-dark:hover {
+    color: rgb(123, 204, 57);
+}
+
+.button-icon {
+    cursor: pointer;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100%;
+    height: 280px;
+}
+
+.banner {
+    object-fit: none;
+}
+
+.centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+button {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: 2px solid rgb(43, 59, 74);
+    border-radius: 3px;
+}
+
+.gradient-btn {
+    padding: 5px 10px;
+    background: rgb(0,53,102);
+    background: linear-gradient(45deg, rgba(0,53,102,1) 20%, rgba(65,134,198,1) 50%, rgba(0,53,102,1) 80%);
+
+}
+
+.gradient-btn:hover {
+    background: rgb(20,79,134);
+    background: linear-gradient(45deg, rgba(20,79,134,1) 10%, rgb(97, 179, 255) 50%, rgba(20,79,134,1) 90%);
+    border-color: rgb(33, 47, 59);
+}
+
+.gradient-cancel-btn {
+    background: rgb(139,14,14);
+    background: linear-gradient(45deg, rgba(139,14,14,1) 0%, rgba(227,93,93,1) 50%, rgba(139,14,14,1) 100%);
+}
+
+.gradient-cancel-btn:hover {
+    background: rgb(193,16,16);
+    background: linear-gradient(45deg, rgba(193,16,16,1) 0%, rgba(255,117,117,1) 50%, rgba(193,16,16,1) 100%);
+    border-color: rgb(33, 47, 59);
+}
+
+.gradient-btn-green {
+    background: rgb(6,126,75);
+    background: linear-gradient(45deg, rgba(6,126,75,1) 20%, rgba(80,215,128) 50%, rgba(6,126,75,1) 80%); 
+}
+
+.gradient-btn-green:hover {
+    background: rgb(11, 160, 98);
+    background: linear-gradient(45deg, rgba(11, 160, 98,1) 20%, rgb(105, 226, 147) 50%, rgba(11, 160, 98,1) 80%); 
+    border-color: rgb(33, 47, 59);
+}
+
+.gradient-btn-yellow {
+    background: rgb(153, 133, 1);
+    background: linear-gradient(45deg, rgb(153, 133, 1) 0%, rgb(224, 202, 56) 50%, rgb(153, 133, 1) 100%);
+}
+
+.gradient-btn-yellow:hover {
+    background: rgb(199, 172, 0);
+    background: linear-gradient(45deg, rgb(199, 172, 0) 0%, rgb(233, 213, 82) 50%, rgb(199, 172, 0) 100%);
+    border-color: rgb(33, 47, 59);
+}
+
+.input-error {
+    border: 1px solid rgb(193,16,16);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(65, 65, 65);
+    border-radius: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 380px) {
+    #sign_in, #register {
+        display: none;
+    }
+}

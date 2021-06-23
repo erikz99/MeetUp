@@ -1,0 +1,21 @@
+#profile {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 40px 20px;
+    padding: 10px 20px;
+    background: rgb(183, 216, 211);
+    border: 2px solid rgb(138, 181, 181);
+    border-radius: 10px;
+}
+
+.columns h2 {
+    display: inline;
+}
+
+.row {
+    margin: 20px 0px;
+}
+
+#fn {
+    margin-left: 20px;
+}

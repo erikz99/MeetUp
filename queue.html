@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>MeetUp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/panel.css">
+        <link rel="stylesheet" href="css/queue.css">
+        <script src="scripts/panel.js" defer></script>
+        <script src="scripts/queue.js" defer></script>
+        <script src="scripts/panel_init.js" defer></script>
+    </head>
+    <body>
+        <header id="main_header">
+            <div class="main-header-item" id="icon_header_container">
+                <a class="no-style-a" href="index.html">
+                    <img class="icon" id="img_icon" src="img/icons/logo.png" alt="Лого на MeetUp">
+                </a>
+            </div>
+            <div class="main-header-item" id="profile_header_container">
+                <a id="sign_in" class="no-style-a" href="login.html">Вход</a>
+                <a id="register"  class="no-style-a" href="register.html">Регистрация</a>
+                <img id="profile_icon" class="button-icon" src="img/icons/panel.png" alt="Икона на потребителки панел">
+            </div>
+        </header>
+        <main id="queue-main">
+            <section id="comments">
+                <header id="comments_header">
+                    <h2>Коментари</h2>
+                </header>
+                <div id="commnets-wrapper" class="scrollable">
+                    
+                </div>
+                <form id="comment_form">
+                    <textarea name="comment_add" id="comment_add" placeholder="Напишете коментар тук"></textarea>
+                    <button type="submit" id="btn_comment">
+                        <img src="img/icons/send.png" alt="Икона на бутона за изпращане на коментар">
+                    </button>
+                </form>
+            </section>
+            <div id="page-content-wrapper">
+                <header id="page_header" class="queue-header">
+                    <h1 id="room_name"></h1>
+                </header>
+                <section id="contnet_container">
+                    <div id="queue_wrapper" class="table-wrapper">
+                        <header class="table-header">
+                            <h2>Опашка</h2>
+                        </header>
+                        <div class="table-container scrollable">
+                            <table id="queue">
+                                <thead>
+                                    <tr>
+                                        <th>Ред</th>
+                                        <th>Име</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="image-wrapper">
+                        <div id="image_conateiner">
+                            <img id="img_1" class="fadein-img animation-img" src="img/pages/student_1.png" alt="">
+                            <img id="img_2" class="move-img animation-img" src="img/pages/student_2.png" alt="">
+                            <img id="img_3" class="move-img animation-img" src="img/pages/student_3.png" alt="">
+                            <img id="img_4" class="fadeaway-img animation-img" src="img/pages/student_4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div id="shedule_container"  class="table-wrapper">
+                        <header class="table-header">
+                            <h2>График</h2>
+                        </header>
+                        <div class="table-container scrollable">
+                            <table id="schedule">
+                                <thead>
+                                    <tr>
+                                        <th>Ред</th>
+                                        <th>Име</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="progress_container" class="centered-column">
+                        <div id="status-conatiner">
+                            Статус: <span id="status"></span>
+                        </div>
+                    </div>
+                    <div id="btn-container"></div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

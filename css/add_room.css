@@ -1,0 +1,104 @@
+html, body, main, #events-wrapper {
+    height: 100%;
+}
+
+#form {
+    height: 100%;
+    margin: 0 20px 20px 20px;
+    overflow: hidden;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    padding: 0 20px;
+    border: 4px solid rgb(138, 181, 181);
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+
+.form-itmes-conrainer {
+    padding: 0 10px;
+    margin: 20px 0;
+    border: 2px solid rgb(131, 161, 161);
+    border-radius: 20px;
+}
+
+.form-item {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+#information {
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    overflow: scroll;
+}
+
+#room-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.add-btn {
+    background: rgb(11, 160, 98);
+}
+.remove-btn{
+    background: rgb(193,16,16);
+}
+
+fieldset {
+    border: none;
+}
+
+#column_names {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(0, 18, 51);
+}
+
+.user-row, #column_names {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.25fr 0.25fr;
+    column-gap: 5px;
+}
+
+.user-row {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#schedule {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#schedule-container {
+    height: 100%;
+    margin: 20px 0;
+}
+
+#schedule-wrapper {
+    width: 100%;
+    padding: 0 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}

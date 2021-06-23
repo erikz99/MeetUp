@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>MeetUp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/panel.css">
+        <script src="scripts/panel.js" defer></script>
+        <script src="scripts/panel_init.js" defer></script>
+    </head>
+    <body>
+        <header id="main_header">
+            <div class="main-header-item" id="icon_header_container">
+                <a class="no-style-a" href="index.html">
+                    <img class="icon" id="img_icon" src="img/icons/logo.png" alt="Лого на MeetUp">
+                </a>
+            </div>
+            <div class="main-header-item" id="profile_header_container">
+                <a id="sign_in" class="no-style-a" href="login.html">Вход</a>
+                <a id="register"  class="no-style-a" href="register.html">Регистрация</a>
+                <img id="profile_icon" class="button-icon" src="img/icons/panel.png" alt="Икона на потребителки панел">
+            </div>
+        </header>
+        <nav>
+            <div id="nav_top_bar"></div>
+            <div id="nav_panel" class="nav-element">
+                <img src="img/icons/calendar.png" alt="">
+                Предстоящи събития
+            </div>
+            <div id="nav_profile" class="nav-element">
+                <img src="img/icons/account.png" alt="">
+                Профил
+            </div>
+            <div id="nav_exit" class="nav-element">
+                <img src="img/icons/exit.png" alt="">
+                Изход
+            </div>
+        </nav>
+        <main class="centered-column main-with-menu">
+            <div id="events-wrapper">
+                <header id="page_header">
+                    <h1>Предстоящи събития</h1>
+                </header>
+                <section id="events">
+                    
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

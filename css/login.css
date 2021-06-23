@@ -1,0 +1,125 @@
+body {
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(21,119,122);
+    background: linear-gradient(0deg, rgba(21,119,122,1) 0%, rgba(48,153,95,1) 30%, rgba(109,230,152,1) 75%);
+}
+
+.error_field {
+    color: rgb(180, 17, 17);
+}
+
+.form-container{
+    max-width: 640px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    background: rgb(249, 250, 249);
+    border: 4px solid rgb(0, 53, 102);
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.form-item {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.form-item input, .form-item label {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.form-item button {
+    margin-top: 40px;
+    padding: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: rgb(0, 107, 210);
+}
+
+.btn-container a:hover {
+    text-decoration: none;
+    color: rgb(123, 204, 57);
+}
+
+#login_form_container {
+    overflow: hidden;
+}
+
+#form_title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 40px 0 10px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+#login-btn {
+    width: 64px;
+    margin-bottom: 20px;
+}
+
+#register-btn {
+    width: 128px;
+    margin-bottom: 20px;
+}
+
+#checkbox_row label, #checkbox_row input{
+    display: inline;
+}
+
+#checkbox_row input{
+    width: 24px;
+}
+
+#profile-types-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#register_type_container h1 {
+    color: rgb(43, 43, 43);
+}
+
+.profile-type {
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 20px;
+}
+
+.profile-type h2 {
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+.profile-type button {
+    margin-top: 20px;
+}
